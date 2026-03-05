@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lego</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<div id="overlay" class="overlay"></div>
+
+<header>
+    <h1>La mia passione per i Lego</h1>
+</header>
+
+<nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="videogiochi.html">Videogiochi</a>
+    <a href="motori.html">Motori</a>
+    <a href="lego.html">Lego</a>
+</nav>
+
+<div class="container py-4">
+
+    <div class="row justify-content-center">
+        <section class="col-12 col-md-10 col-lg-8 card-dark">
+
+            <div class="d-flex align-items-center gap-3 mb-3">
+                <span class="emoji-gradient">🧱</span>
+                <h2 class="mb-0">Mi piace costruire set Lego</h2>
+            </div>
+
+            <div class="gioco d-flex align-items-start gap-4">
+                
+                <div class="lego-col">
+                    <img src="Ecto-1.jpg" alt="Ecto-1" class="img-fluid img-left">
+                    <h3 class="titolo-gioco mt-2" onclick="toggleDescrizione('descrizione1')">
+                        Ecto-1
+                    </h3>
+                </div>
+
+                <p id="descrizione1" class="descrizione hidden">
+                    <span class="close-btn" onclick="toggleDescrizione('descrizione1')">✖</span>
+                    L’Ecto‑1 è uno dei veicoli cinematografici più iconici di sempre.  
+                    Basata su una Cadillac Miller‑Meteor del 1959, è l’auto ufficiale dei Ghostbusters, 
+                    completa di sirene, luci lampeggianti e attrezzature paranormali montate sul tetto.  
+                    Nel mondo Lego, l’Ecto‑1 è un set amatissimo perché riproduce fedelmente ogni dettaglio 
+                    dell’auto originale: le pinne posteriori, la carrozzeria bianca, il logo dei Ghostbusters 
+                    e gli strumenti per catturare i fantasmi.  
+                    È un modello che unisce nostalgia, design e divertimento, perfetto per gli appassionati 
+                    dei film e dei mattoncini.
+                </p>
+            </div>
+
+            <hr class="linea">
+
+            <div class="gioco d-flex align-items-start gap-4">
+                
+                <div class="lego-col">
+                    <img src="Ford-GT.jpg" alt="Ford GT" class="img-fluid img-left">
+                    <h3 class="titolo-gioco mt-2" onclick="toggleDescrizione('descrizione2')">
+                        Ford GT
+                    </h3>
+                </div>
+
+                <p id="descrizione2" class="descrizione hidden">
+                    <span class="close-btn" onclick="toggleDescrizione('descrizione2')">✖</span>
+                    La Ford GT è una supercar americana nata per celebrare la storica vittoria di Ford 
+                    alla 24 Ore di Le Mans del 1966.  
+                    La versione moderna riprende lo spirito originale, combinando un design futuristico 
+                    con soluzioni aerodinamiche avanzate.  
+                    Il suo motore V6 EcoBoost da oltre 650 cavalli, insieme al telaio in fibra di carbonio 
+                    e alle sospensioni attive, la rendono una delle auto più tecnologiche e performanti 
+                    della sua categoria.  
+                    La Ford GT non è solo una macchina veloce: è un pezzo di storia dell’automobilismo, 
+                    un tributo alle corse e all’ingegneria americana.
+                </p>
+            </div>
+
+            <hr class="linea">
+
+            <div class="gioco d-flex align-items-start gap-4">
+                
+                <div class="lego-col">
+                    <img src="Porsche-911.jpg" alt="Porsche 911" class="img-fluid img-left">
+                    <h3 class="titolo-gioco mt-2" onclick="toggleDescrizione('descrizione3')">
+                        Porsche 911
+                    </h3>
+                </div>
+
+                <p id="descrizione3" class="descrizione hidden">
+                    <span class="close-btn" onclick="toggleDescrizione('descrizione3')">✖</span>
+                    La Porsche 911 è una leggenda vivente.  
+                    Prodotta dal 1964, è diventata un simbolo di eleganza, prestazioni e tradizione.  
+                    Il suo design inconfondibile, con i fari tondi e la linea posteriore inclinata, 
+                    è rimasto fedele all’originale pur evolvendosi nel tempo.  
+                    Il motore boxer posteriore garantisce un equilibrio unico, mentre la precisione di guida 
+                    e la qualità costruttiva tedesca la rendono una delle sportive più amate al mondo.  
+                    La 911 è un’auto che unisce storia, tecnologia e passione, capace di emozionare 
+                    sia in pista che su strada.
+                </p>
+            </div>
+
+            <hr class="linea">
+
+            <div class="gioco d-flex align-items-start gap-4">
+                
+                <div class="lego-col">
+                    <img src="Camion-Betoniera.jpg" alt="Camion Betoniera" class="img-fluid img-left">
+                    <h3 class="titolo-gioco mt-2" onclick="toggleDescrizione('descrizione4')">
+                        Camion Betoniera
+                    </h3>
+                </div>
+
+                <p id="descrizione4" class="descrizione hidden">
+                    <span class="close-btn" onclick="toggleDescrizione('descrizione4')">✖</span>
+                    Il camion betoniera è un mezzo fondamentale nei cantieri.  
+                    Il suo tamburo rotante permette di mantenere il calcestruzzo sempre in movimento, 
+                    evitando che si indurisca durante il trasporto.  
+                    Nei set Lego, la betoniera è spesso dotata di meccanismi funzionanti che simulano 
+                    il vero processo di miscelazione.  
+                    È un modello divertente da costruire e ricco di dettagli, perfetto per chi ama 
+                    i veicoli da lavoro e il mondo dell’edilizia.
+                </p>
+            </div>
+
+            <hr class="linea">
+
+            <div class="gioco d-flex align-items-start gap-4">
+                
+                <div class="lego-col">
+                    <img src="Jeep-Rubicon.jpg" alt="Jeep Rubicon" class="img-fluid img-left">
+                    <h3 class="titolo-gioco mt-2" onclick="toggleDescrizione('descrizione5')">
+                        Jeep Rubicon
+                    </h3>
+                </div>
+
+                <p id="descrizione5" class="descrizione hidden">
+                    <span class="close-btn" onclick="toggleDescrizione('descrizione5')">✖</span>
+                    La Jeep Rubicon è uno dei fuoristrada più capaci al mondo.  
+                    Progettata per affrontare terreni estremi, monta assali rinforzati, blocchi dei differenziali, 
+                    pneumatici da off‑road e un telaio robustissimo.  
+                    È pensata per chi ama l’avventura: rocce, fango, neve, sabbia… la Rubicon passa ovunque.  
+                    Nei set Lego, questo modello viene spesso riprodotto con sospensioni funzionanti 
+                    e dettagli realistici, rendendolo un veicolo perfetto per gli appassionati 
+                    di fuoristrada e costruzioni tecniche.
+                </p>
+            </div>
+
+        </section>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Damiano - Imparando a creare siti web | <a href="#">Contatti</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

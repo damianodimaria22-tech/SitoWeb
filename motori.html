@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motori</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<div id="overlay" class="overlay"></div>
+
+<header>
+    <h1>La mia passione per i motori</h1>
+</header>
+
+<nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="videogiochi.html">Videogiochi</a>
+    <a href="motori.html">Motori</a>
+    <a href="lego.html">Lego</a>
+</nav>
+
+<div class="container py-4">
+
+    <div class="row justify-content-center">
+        <section class="col-12 col-md-10 col-lg-8 card-dark">
+
+            <div class="d-flex align-items-center gap-3 mb-3">
+
+                <span class="emoji-gradient">🚗</span>
+
+                <h2 class="mb-0">Amo le auto e tutto ciò che riguarda i motori</h2>
+            </div>
+
+            <div class="gioco d-flex align-items-start gap-4">
+
+                <div class="lego-col">
+                    <img src="Nissan-GTR-R35.jpg" alt="Nissan GTR R35" class="img-fluid img-left">
+
+                    <h3 class="titolo-gioco mt-2"
+                        onclick="toggleDescrizione('descrizione1')">
+                        Nissan GTR R35
+                    </h3>
+                </div>
+
+                <p id="descrizione1" class="descrizione hidden">
+                    <span class="close-btn" onclick="toggleDescrizione('descrizione1')">✖</span>
+                    La Nissan GTR R35 è una delle supercar giapponesi più iconiche di sempre.  
+                    Lanciata nel 2007, ha rivoluzionato il mondo delle auto sportive grazie alla combinazione 
+                    di potenza brutale e tecnologia avanzatissima.  
+                    Il suo motore V6 3.8 biturbo, assemblato a mano dai maestri Takumi, eroga una potenza 
+                    impressionante e permette accelerazioni fulminee.  
+                    La trazione integrale intelligente, il cambio doppia frizione e l’aerodinamica studiata 
+                    in galleria del vento la rendono una vera “Godzilla” della strada, capace di prestazioni 
+                    da pista anche su strada normale.  
+                    È amata per la sua precisione, la stabilità e la capacità di mettere in difficoltà 
+                    supercar molto più costose.
+                </p>
+
+            </div>
+
+            <hr class="linea">
+
+            <div class="gioco d-flex align-items-start gap-4">
+
+                <div class="lego-col">
+                    <img src="Lamborghini-Urus.jpg" alt="Lamborghini Urus" class="img-fluid img-left">
+
+                    <h3 class="titolo-gioco mt-2"
+                        onclick="toggleDescrizione('descrizione2')">
+                        Lamborghini Urus
+                    </h3>
+                </div>
+
+                <p id="descrizione2" class="descrizione hidden">
+                    <span class="close-btn" onclick="toggleDescrizione('descrizione2')">✖</span>
+                    La Lamborghini Urus è il primo SUV ad alte prestazioni prodotto dalla casa di Sant’Agata Bolognese.  
+                    Unisce la potenza e l’aggressività tipiche di Lamborghini con la comodità e la versatilità 
+                    di un’auto familiare.  
+                    Il suo motore V8 biturbo da 650 cavalli permette accelerazioni da supercar, mentre gli interni 
+                    lussuosi e tecnologici offrono un comfort totale.  
+                    La Urus è pensata per chi vuole un’auto capace di affrontare qualsiasi situazione: città, 
+                    autostrada, montagna e persino fuoristrada leggero.  
+                    È diventata uno dei modelli più venduti del marchio grazie al suo mix unico di stile, 
+                    prestazioni e praticità.
+                </p>
+
+            </div>
+
+        </section>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Damiano - Imparando a creare siti web | <a href="#">Contatti</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
