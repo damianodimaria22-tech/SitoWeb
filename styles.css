@@ -356,7 +356,7 @@ body.description-open .titolo-gioco:hover
     padding: 25px;
     border-radius: 12px;
     border-left: 4px solid #ff0000;
-    box-shadow: 0 0 60px rgba(255, 0, 0, 0.35);
+    box-shadow: 0 0 100px rgba(255, 0, 0, 0.35);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -515,4 +515,5 @@ input[type="submit"]:hover
         padding: 8px;
     }
 }
+
 
