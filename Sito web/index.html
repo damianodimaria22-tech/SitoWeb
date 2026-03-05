@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il mio primo sito</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.webmanifest">
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<div id="overlay" class="overlay"></div>
+
+<nav class="menu">
+    <a href="javascript:void(0)" onclick="toggleDescrizione('curriculumBox')">Chi sono</a>
+    <a href="#passioni">Passioni</a>
+    <a href="javascript:void(0)" onclick="toggleDescrizione('progettiBox')">Progetti</a>
+    <a href="#contatti">Contatti</a>
+</nav>
+
+<header class="hero-intro text-center py-4">
+    <h1 class="mb-1">Benvenuto nel mio sito!</h1>
+    <p class="subtitle mb-0">PWA dark/red, passioni e progetti in evoluzione continua.</p>
+</header>
+
+<div class="container py-4">
+    <div class="row g-4 justify-content-center">
+
+        <section id="chi-sono" class="col-12 col-md-10 col-lg-8 card-dark d-flex align-items-center gap-3">
+            <span class="emoji-gradient">👤</span>
+            <div>
+                <h2>Chi sono</h2>
+                <p>Ciao! Mi chiamo Damiano e sto imparando a creare siti web e PWA moderne.</p>
+            </div>
+        </section>
+
+        <section id="passioni" class="passioni col-12 col-md-10 col-lg-8 card-dark">
+            <div class="d-flex align-items-center gap-3 mb-2">
+                <span class="emoji-gradient">🔥</span>
+                <h2 class="mb-0">Le mie passioni</h2>
+            </div>
+            <ul>
+                <li><a href="videogiochi.html">Passione per i videogiochi 🎮</a></li>
+                <li><a href="motori.html">Passione per i motori 🚗</a></li>
+                <li><a href="lego.html">Passione per i lego 🧱</a></li>
+            </ul>
+        </section>
+
+        <section id="progetti" class="col-12 col-md-10 col-lg-8 card-dark">
+            <div class="d-flex align-items-center gap-3 mb-2">
+                <span class="emoji-gradient">💡</span>
+                <h2 class="mb-0">I miei progetti</h2>
+            </div>
+            <p>Sto trasformando questo sito in una PWA con layout responsive, effetti neon e pagine dedicate alle mie passioni.</p>
+        </section>
+
+        <section id="contatti" class="col-12 col-md-10 col-lg-8 card-dark">
+            <div class="d-flex align-items-center gap-3 mb-2">
+                <span class="emoji-gradient">📧</span>
+                <h2 class="mb-0">Contattami</h2>
+            </div>
+
+            <p>Scrivimi direttamente da qui! Il messaggio verrà inviato tramite EmailJS.</p>
+
+            <form id="form">
+                <div class="field">
+                    <label for="name">name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+
+                <div class="field">
+                    <label for="email">email</label>
+                    <input type="text" name="email" id="email">
+                </div>
+
+                <div class="field">
+                    <label for="message">message</label>
+                    <input type="text" name="message" id="message">
+                </div>
+
+                <div class="field">
+                    <label for="title">title</label>
+                    <input type="text" name="title" id="title">
+                </div>
+
+                <input type="submit" id="button" value="Send Email">
+            </form>
+
+            <script>
+                emailjs.init('XujoXDIPG5d7did9d');
+            </script>
+        </section>
+
+        <section class="card menu-toggle col-12 col-md-10 col-lg-8">
+            <button id="menuButton" onclick="toggleMenu()">
+                ☰ Mostra sezioni
+            </button>
+        </section>
+
+        <section id="menu" class="card hidden menu-dropdown col-12 col-md-10 col-lg-8">
+            <ul>
+                <li>Chi sono</li>
+                <li>Le mie passioni</li>
+                <li>I miei progetti</li>
+                <li>Contattami</li>
+            </ul>
+        </section>
+
+        <section class="card menu-toggle col-12 col-md-10 col-lg-8">
+            <button id="timeButton" onclick="showDateTime()">
+                🕒 Mostra data e ora
+            </button>
+
+            <p id="timeResult" class="hidden digital-clock"></p>
+        </section>
+
+    </div>
+</div>
+
+<div id="curriculumBox" class="descrizione hidden">
+    <span class="close-btn" onclick="toggleDescrizione('curriculumBox')">✖</span>
+    <h2 class="titolo-gioco">Chi sono</h2>
+
+    <p><strong>Nome:</strong> Damiano</p>
+    <p><strong>Passioni:</strong> Web design, videogiochi, motori, Lego</p>
+    <p><strong>Stile preferito:</strong> Dark/Red Neon</p>
+
+    <hr class="linea">
+
+    <h3>Competenze</h3>
+    <ul>
+        <li>Programmare in C</li>
+        <li>Programmare in C++</li>
+        <li>Programmare in Python</li>
+        <li>Programmare in HTML, CSS, JSON, JavaScript</li>
+    </ul>
+
+    <hr class="linea">
+
+    <h3>Obiettivi futuri</h3>
+    <ul>
+        <li>Creare una PWA</li>
+    </ul>
+</div>
+
+<div id="progettiBox" class="descrizione hidden">
+    <span class="close-btn" onclick="toggleDescrizione('progettiBox')">✖</span>
+    <h2 class="titolo-gioco">I miei progetti</h2>
+
+    <h3>Il mio sito</h3>
+    <p>Sto creando un sito personale completamente in stile dark/red, con layout responsive, icone SVG personalizzate, effetti neon e pagine dedicate alle mie passioni.</p>
+
+    <hr class="linea">
+
+    <h3>PWA in working progress</h3>
+    <p>La mia PWA è attualmente in <strong>working progress</strong></p>
+</div>
+
+<footer>
+    <p>2026 Damiano - Imparando a creare siti web</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
